@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.a3671129.musidroid.MemberActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="0dp">
+
+        <TextView
+            android:id="@+id/titleMember"
+            android:layout_width="170dp"
+            android:layout_height="29dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Pseudo"
+            android:textAlignment="center"
+            android:textColor="#0080FF"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:background="#D9242A"
+            android:text="Logout" />
+
+
+        <Button
+            android:id="@+id/NouvellePartition"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:background="#17F0E9"
+            android:onClick="onClickNewPartition"
+            android:text="Créer Nouvelle Partition"
+            android:textSize="15dp"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mespartitions"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/psText"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="onClickRefresh"
+            android:text="Actualiser" />
+
+
+        <TextView
+            android:id="@+id/prText"
+            android:layout_width="175dp"
+            android:layout_height="25dp"
+
+            android:layout_alignBaseline="@+id/psText"
+            android:layout_alignBottom="@+id/psText"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:text="Reçues"
+            android:textAlignment="center"
+            android:textColor="#0080FF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listePartitionsRecues"
+            android:layout_width="174dp"
+            android:layout_height="155dp"
+            android:layout_alignEnd="@+id/prText"
+            android:layout_alignParentBottom="true"
+            android:background="#fffeef" />
+
+        <TextView
+            android:id="@+id/psText"
+            android:layout_width="175dp"
+            android:layout_height="25dp"
+            android:layout_above="@+id/listePartitionsSauvegardees"
+            android:layout_alignStart="@+id/listePartitionsSauvegardees"
+            android:background="#ffffff"
+            android:text="Enregistrées"
+            android:textAlignment="center"
+            android:textColor="#0080FF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listePartitionsSauvegardees"
+            android:layout_width="174dp"
+            android:layout_height="155dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="#fffeef" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

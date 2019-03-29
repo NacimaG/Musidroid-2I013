@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Musidroid</string>
+    <string name="login_title">Connexion</string>
+    <string name="pseudo">pseudo</string>
+    <string name="password">password</string>
+    <string name="register">Login</string>
+    <string name="register_title">Inscription</string>
+    <string name="email">email</string>
+    <string name="password2">password2</string>
+</resources>

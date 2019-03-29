@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <Spinner
+        android:id="@+id/instrumentChoice"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/boardSurface"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.a3671129.musidroid.InstrumentBoard
+        android:id="@+id/boardSurface"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_above="@+id/GrillActuel"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/changeInstantDebut" />
+
+    <TextView
+        android:id="@+id/Partition"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:text="Partition"
+        android:textColor="#0080FF "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Partition"
+        android:background="@null"
+        android:onClick="onClickResetPartition"
+        android:src="@drawable/reset"
+        android:text="RESET PARTITION"
+        android:textSize="11dp" />
+
+    <ImageButton
+        android:id="@+id/button5"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/GrillActuel"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginEnd="22dp"
+        android:background="@null"
+        android:onClick="onClickPlayInstrumentPart"
+        android:src="@drawable/play"
+        android:text="Jouer Instrument"
+        android:textSize="11dp" />
+
+
+    <ImageButton
+        android:id="@+id/button6"
+        android:layout_width="45dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/instrumentChoice"
+        android:background="@null"
+        android:onClick="onClickReset"
+        android:src="@drawable/reset"
+        android:text="RESET INSTRUMENT"
+        android:textSize="11dp" />
+
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Partition"
+        android:background="@null"
+        android:onClick="onClickPlayInstrument"
+        android:src="@drawable/play"
+        android:textSize="11dp" />
+
+
+    <SeekBar
+        android:id="@+id/changeInstantDebut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/param"
+        android:indeterminate="false" />
+
+
+    <ImageButton
+        android:id="@+id/param"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/NomPartition"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:onClick="onClickParam"
+        android:src="@drawable/param" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/changeInstantDebut"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/param"
+        android:background="@null"
+        android:onClick="onClickSave"
+        android:src="@drawable/save"
+        android:text="SAVE"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/NomPartition"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button6"
+        android:text="My Partition "
+        android:textAlignment="center"
+        android:textColor="#0080FF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GrillActuel"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentStart="true"
+        android:text="  Grille"
+        android:textColor="#0080FF "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

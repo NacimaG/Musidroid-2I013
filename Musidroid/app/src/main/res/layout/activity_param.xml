@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/paramText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Paramètres"
+        android:textColor="#0080FF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tempoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/boardSurface"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:text="Tempo"
+        android:textColor="#0080FF"
+        android:textSize="15dp" />
+
+    <SeekBar
+        android:id="@+id/changeTempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignEnd="@+id/instrumentChoice"
+        android:layout_margin="1dp"
+        android:layout_toStartOf="@+id/instrumentChoice"
+        android:indeterminate="false"
+        android:max="10" />
+
+
+
+    <TextView
+        android:id="@+id/octaveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:text="Octave"
+        android:textColor="#0080FF"
+        android:layout_below="@+id/boardSurface"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:id="@+id/changeOctave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:max="10"
+
+
+        android:layout_toStartOf="@+id/instrumentChoice"
+        android:layout_alignEnd="@+id/instrumentChoice"
+        android:indeterminate="false"
+        android:layout_margin="1dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/boardSurface"
+        android:padding="5dp"
+        android:text="Débuter la dernière Grille à l'instant :"
+        android:textColor="#0080FF"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/instantsValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+</LinearLayout>
