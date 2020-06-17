@@ -1,7 +1,7 @@
 "Musidroid-2I013" 
 Projet MusiDroid de l'UE 2I013 
 
-Description: Création d'une interface graphique qui nous permet de séléctionner un instrument et de jouer des morceaux de musique.
+Description: Création d'une interface graphique qui nous permet de séléctionner un instrument et de jouer des morceaux de musique sur Android.
 
 Réalisé par: 
     Nassima Ghout 
